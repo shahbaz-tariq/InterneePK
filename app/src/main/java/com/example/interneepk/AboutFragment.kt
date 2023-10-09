@@ -1,4 +1,4 @@
-package com.example.interneepk.ui.about
+package com.example.interneepk
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,16 +22,10 @@ class AboutFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val aboutViewModel =
-            ViewModelProvider(this).get(AboutViewModel::class.java)
 
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textAbout
-        aboutViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 

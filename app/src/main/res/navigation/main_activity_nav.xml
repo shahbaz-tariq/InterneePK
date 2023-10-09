@@ -7,24 +7,20 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.interneepk.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:name="com.example.interneepk.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_about"
-        android:name="com.example.interneepk.ui.about.AboutFragment"
-        android:label="About"
+        android:name="com.example.interneepk.AboutFragment"
         tools:layout="@layout/fragment_about" />
 
     <fragment
         android:id="@+id/navigation_internship"
-        android:name="com.example.interneepk.ui.internship.InternshipFragment"
-        android:label="Internships"
+        android:name="com.example.interneepk.InternshipFragment"
         tools:layout="@layout/fragment_internship" />
     <fragment
-        android:id="@+id/navigation_contact"
-        android:name="com.example.interneepk.ui.contact.ContactFragment"
-        android:label="Contact Us"
-        tools:layout="@layout/fragment_contact" />
+        android:id="@+id/navigation_profile"
+        android:name="com.example.interneepk.ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

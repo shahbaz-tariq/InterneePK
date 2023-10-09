@@ -1,4 +1,4 @@
-package com.example.interneepk.ui.internship
+package com.example.interneepk
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,8 +13,6 @@ class InternshipFragment : Fragment() {
 
     private var _binding: FragmentInternshipBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -22,16 +20,11 @@ class InternshipFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val internshipViewModel =
-            ViewModelProvider(this).get(InternshipViewModel::class.java)
 
         _binding = FragmentInternshipBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textInternship
-        internshipViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+
         return root
     }
 
