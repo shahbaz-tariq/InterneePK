@@ -59,7 +59,7 @@ class LoginActivity : AppCompatActivity() {
                                     finish()
                                 } else {
                                     Toast.makeText(
-                                        this, task.exception!!.message.toString(),
+                                        this, "Invalid Email/Password",
                                         Toast.LENGTH_SHORT
                                     ).show()
                                 }
